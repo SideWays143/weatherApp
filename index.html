@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script/app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <main>
+        
+        <div class="wrapper">
+            <div class="header">
+                <h2 id="home">Today weather</h2>
+                <div class="searchDiv">
+                    <input type="text" class="search" id="search" placeholder="Enter city....">
+                    <button id="searchBtn">Search</button>
+                    <button id="toggle"><span id="f" class="activeUnit">°F</span> | <span id="c">°C</span></button>
+                </div>
+            </div>
+            <div class="weatherContent">
+                <div class="displayWeather">
+                    <div class="detailsTime">
+                        <div class="time"><span id="time"></span> <span id="ampm"></span></div>
+                        <div class="date line"><span class="dayName">Weather info will appear here</span><span id="date"></span></div>
+                        <div class="temp"></div>
+                    </div>
+                    
+                    <div class="weatherlogo"></div>
+                    <div class="detailCity">
+                        <div class="condition line"></div>
+                        <div class="city" id="city">Search for a city above</div>
+                    </div>
+                </div>
+
+                <div class="display5Days"></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
