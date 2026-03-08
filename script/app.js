@@ -237,7 +237,12 @@ $(document).ready(function () {
             //placing data in weather data variable
             weatherData = data;
             renderWeather();
+        }).fail(function(){
+            $(".condition").text("Something went wrong. Please try again.");
+            $(".temp").text("--");
+            $("#city").text("");
         });
+
     };
 
     let getLocationWeather = () => {
@@ -265,6 +270,10 @@ $(document).ready(function () {
                 }
                 weatherData = data;
                 renderWeather();
+            }).fail(function(){
+                $(".condition").text("Something went wrong. Please try again.");
+                $(".temp").text("--");
+                $("#city").text("");
             });
         });
     }
