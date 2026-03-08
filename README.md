@@ -59,18 +59,6 @@ Weather API
 - The frontend sends a request to an API Gateway HTTP endpoint, which triggers an AWS Lambda function.
 The Lambda function retrieves weather data from the external weather API and returns the response to the frontend.
 
-Project Structure
-weather-app
-│
-├── index.html
-├── css
-│   └── styles.css
-├── script
-│   └── app.js
-├── icon
-│   └── weather icons
-└── README.md
-
 ## Key Functionality
 ### Geolocation Weather
 Automatically detects the user’s location and displays the local weather.
